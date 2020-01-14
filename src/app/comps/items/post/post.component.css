@@ -1,0 +1,11 @@
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 5px solid green;
+    background-color: hotpink;
+    width: 300px;
+    margin: 5px;
+}

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PostAndCommentService } from 'src/app/services/post-and-comment.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-posts-page',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsPageComponent implements OnInit {
 
-  constructor() { }
+  constructor( private postAndCommSVC:PostAndCommentService) { }
 
   ngOnInit() {
+  }
+
+  logout(){
+    this.postAndCommSVC.logoff()
   }
 
 }

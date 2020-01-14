@@ -1,0 +1,10 @@
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 5px solid blue;
+    background-color: yellow;
+    width: 150px;
+    margin: 3px;
+}

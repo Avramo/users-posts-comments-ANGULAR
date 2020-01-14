@@ -1,3 +1,9 @@
-<p>post works!</p>
-<h2>i'm inside post</h2>
-<app-comment></app-comment>
+<div>
+    <p>post works!</p>
+    <h2>i'm inside post</h2>
+    <p>post id: {{ postSelf.id }}</p>
+    <p>post userId: {{ postSelf.userId }}</p>
+    <p>post title: {{ postSelf.title }}</p>
+    <p>post body: {{ postSelf.body }}</p>
+    <app-comment *ngFor='let comm of commentsArrObs | async' [selfComment]='comm'></app-comment>
+</div>
